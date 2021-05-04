@@ -27,7 +27,7 @@ public class Header_home_page_Script extends Generic_functions {
 	
 	@Then("check the mpowered health logo or hamburger  should be present in the header")
 	/*TC 001 - Validate that the  mpowered health logo or hamburger should be present in the header*/
-	public void static header_positive_tc_001() throws IOException {
+	public static void header_positive_tc_001() throws IOException {
 		try {
 			click("Welcome_login");
 			driver.findElement(By.xpath(OR_reader("Object_Locator", "Phone_number"))).sendKeys(td_reader("Phone_number"));
@@ -48,7 +48,7 @@ public class Header_home_page_Script extends Generic_functions {
 
 	@When("User click on Drop down or  hamburger tab  to see the drown down options")
 	/*TC 005 -Validate that user is able to click on the 'Drop down' or hamburger tab*/
-	public void static header_positive_tc_005() throws IOException {
+	public static void  header_positive_tc_005() throws IOException {
 		try {
 			click("Three_line");
 			page_wait(20);
@@ -62,7 +62,7 @@ public class Header_home_page_Script extends Generic_functions {
 	}
 	@When("User click on Drop down tab and click on  Your profile then  navigated to the profile page.")
 	/*TC 006 -Validate that the user is navigated to the  profile page on clicking 'Your profile' tab*/
-	public void static header_positive_tc_006() throws IOException {
+	public static  void header_positive_tc_006() throws IOException {
 		page_wait(20);
 		try {
 			click("Profile");
@@ -77,7 +77,7 @@ public class Header_home_page_Script extends Generic_functions {
 	}
 	@When("User click on Drop down tab and click on  Your ratings  then  navigated to the ratings dashboard page.")
 	/*TC 007 -Validate that the user is navigated to the ratings dashboard page on clicking 'Your ratings' tab*/
-	public void static header_positive_tc_007() throws IOException {
+	public static  void header_positive_tc_007() throws IOException {
 		try {
 			click("Three_line");
 			page_wait(20);
@@ -95,7 +95,7 @@ public class Header_home_page_Script extends Generic_functions {
 	}
 	@When("User click on Your alerts icon navigated to the alerts page")
 	/*TC 004 -Validate that the user is navigated to the alerts page on clicking 'Your alerts' icon*/
-	public void static header_positive_tc_004() throws IOException {
+	public static void  header_positive_tc_004() throws IOException {
 		try {
 			click("Three_line");
 			page_wait(20);
