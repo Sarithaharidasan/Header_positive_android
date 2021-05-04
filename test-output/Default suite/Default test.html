@@ -1,0 +1,205 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 04 23:41:00 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>122 seconds (122266 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner_files.Header_home_positive_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_files.Header_home_positive_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the mpowered health logo/hamburger  should be present in the header", "Optional[Test header in home page positive functionality]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-PVHGHF8&apos;, ip: &apos;172.17.240.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.mpoweredhealth.MainActi..., appPackage: com.mpoweredhealth.demo, databaseEnabled: false, desired: {appActivity: com.mpoweredhealth.MainActi..., appPackage: com.mpoweredhealth.demo, deviceName: realme 8 Pro, platformName: android, platformVersion: 11, udid: 2b5e319e}, deviceApiLevel: 30, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 2b5e319e, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 2b5e319e, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 108, takesScreenshot: true, udid: 2b5e319e, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0da54809-3370-4222-b7ea-d72909418180
+*** Element info: {Using=class name, value=//android.widget.TextView[@index=&apos;0&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByClassName(DefaultGenericMobileDriver.java:125)
+	at io.appium.java_client.AppiumDriver.findElementByClassName(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByClassName(AndroidDriver.java:1)
+	at Header_Home_Page.Header_home_page_Script.header_positive_tc_001(Header_home_page_Script.java:40)
+	at ?.check the mpowered health logo or hamburger  should be present in the header(file:///C:/Users/SARITHA%20H/Downloads/Appium_Framework-main/src/main/java/Header_Home_Page/Header.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1108136194", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1108136194'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-PVHGHF8&apos;, ip: &apos;172.17.240.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.mpoweredhealth.MainActi..., appPackage: com.mpoweredhealth.demo, databaseEnabled: false, desired: {appActivity: com.mpoweredhealth.MainActi..., appPackage: com.mpoweredhealth.demo, deviceName: realme 8 Pro, platformName: android, platformVersion: 11, udid: 2b5e319e}, deviceApiLevel: 30, deviceManufacturer: realme, deviceModel: RMX3081, deviceName: 2b5e319e, deviceScreenDensity: 480, deviceScreenSize: 1080x2400, deviceUDID: 2b5e319e, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 108, takesScreenshot: true, udid: 2b5e319e, viewportRect: {height: 2050, left: 0, top: 108, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0da54809-3370-4222-b7ea-d72909418180
+*** Element info: {Using=class name, value=//android.widget.TextView[@index=&apos;0&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByClassName(DefaultGenericMobileDriver.java:125)
+	at io.appium.java_client.AppiumDriver.findElementByClassName(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByClassName(AndroidDriver.java:1)
+	at Header_Home_Page.Header_home_page_Script.header_positive_tc_001(Header_home_page_Script.java:40)
+	at ?.check the mpowered health logo or hamburger  should be present in the header(file:///C:/Users/SARITHA%20H/Downloads/Appium_Framework-main/src/main/java/Header_Home_Page/Header.feature:5)
+</pre></div></td>
+<td>57</td>
+<td>Runner_files.Header_home_positive_runner@58695725</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner_files.Header_home_positive_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_files.Header_home_positive_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that user is able to click on the Drop down tab", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>2</td>
+<td>Runner_files.Header_home_positive_runner@58695725</td></tr>
+<tr>
+<td title='Runner_files.Header_home_positive_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_files.Header_home_positive_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to the  profile page on clicking  Your profile tab", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>3</td>
+<td>Runner_files.Header_home_positive_runner@58695725</td></tr>
+<tr>
+<td title='Runner_files.Header_home_positive_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_files.Header_home_positive_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to the ratings dashboard page on clicking Your ratings tab", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>5</td>
+<td>Runner_files.Header_home_positive_runner@58695725</td></tr>
+<tr>
+<td title='Runner_files.Header_home_positive_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_files.Header_home_positive_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to the alerts page on clicking Your alerts icon", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>5</td>
+<td>Runner_files.Header_home_positive_runner@58695725</td></tr>
+<tr>
+<td title='Runner_files.Header_home_positive_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_files.Header_home_positive_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to the Feedback Port   page  on clicking Feedback", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>9</td>
+<td>Runner_files.Header_home_positive_runner@58695725</td></tr>
+<tr>
+<td title='Runner_files.Header_home_positive_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_files.Header_home_positive_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to the help or FAQ page on clicking Help or FAQ icon", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>2</td>
+<td>Runner_files.Header_home_positive_runner@58695725</td></tr>
+<tr>
+<td title='Runner_files.Header_home_positive_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_files.Header_home_positive_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to the Contact Us page  on clicking  Contact us", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>12</td>
+<td>Runner_files.Header_home_positive_runner@58695725</td></tr>
+<tr>
+<td title='Runner_files.Header_home_positive_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_files.Header_home_positive_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to see Privacy Policy dialogue box on clicking on the Privacy Policy", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>2</td>
+<td>Runner_files.Header_home_positive_runner@58695725</td></tr>
+<tr>
+<td title='Runner_files.Header_home_positive_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_files.Header_home_positive_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is able to see Terms & Conditions dialogue box on clicking on the Terms & Conditions", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>2</td>
+<td>Runner_files.Header_home_positive_runner@58695725</td></tr>
+<tr>
+<td title='Runner_files.Header_home_positive_runner.runScenario()'><b>runScenario</b><br>Test class: Runner_files.Header_home_positive_runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that the user is navigated to the Landing page on clicking Log out icon", "Optional[Test header in home page positive functionality]"</td>
+<td></td>
+<td>5</td>
+<td>Runner_files.Header_home_positive_runner@58695725</td></tr>
+</table><p>
+</body>
+</html>
